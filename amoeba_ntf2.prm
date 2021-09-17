@@ -1,0 +1,191 @@
+
+      ##############################
+      ##                          ##
+      ##  Force Field Definition  ##
+      ##                          ##
+      ##############################
+
+
+forcefield              AMOEBA-ntf2
+
+bond-cubic              -2.55
+bond-quartic            3.793125
+angle-cubic             -0.014
+angle-quartic           0.000056
+angle-pentic            -0.0000007
+angle-sextic            0.000000022
+opbendtype              ALLINGER
+opbend-cubic            -0.014
+opbend-quartic          0.000056
+opbend-pentic           -0.0000007
+opbend-sextic           0.000000022
+torsionunit             0.5
+vdwtype                 BUFFERED-14-7
+radiusrule              CUBIC-MEAN
+radiustype              R-MIN
+radiussize              DIAMETER
+epsilonrule             HHG
+dielectric              1.0
+polarization            MUTUAL
+vdw-12-scale            0.0
+vdw-13-scale            0.0
+vdw-14-scale            1.0
+vdw-15-scale            1.0
+mpole-12-scale          0.0
+mpole-13-scale          0.0
+mpole-14-scale          0.4
+mpole-15-scale          0.8
+polar-12-scale          0.0
+polar-13-scale          0.0
+polar-14-scale          1.0
+polar-15-scale          1.0
+polar-14-intra          0.5
+direct-11-scale         0.0
+direct-12-scale         1.0
+direct-13-scale         1.0
+direct-14-scale         1.0
+mutual-11-scale         1.0
+mutual-12-scale         1.0
+mutual-13-scale         1.0
+mutual-14-scale         1.0
+
+
+      #############################
+      ##                         ##
+      ##  Literature References  ##
+      ##                         ##
+      #############################
+
+
+NTf2 parameters were developped by C. Cervinka in January 2019, following the public protocol, described on the page https://sites.google.com/site/amoebaworkshop/
+
+Atomic multipoles were obtained from the GDMA processing of the MP2/aug-cc-pVTZ electrostatic potential of cis and trans conformers of the NTf2 anion. 
+Polarizabilities and van der Waals parameters were transferred from similar atomic types in similar ions in the original AMOEBA distribution.
+Parameters governing the molecular geometry were extracted from the MP2/aug-cc-pVTZ geometry optimizations.
+
+
+      #############################
+      ##                         ##
+      ##  Atom Type Definitions  ##
+      ##                         ##
+      #############################
+
+
+atom	501	51	N	"bistriflimide N"	7	14.007    2
+atom	502	52	S	"bistriflimide S"	16	32.066    4
+atom	504	53	C	"bistriflimide C"	6	12.011    4
+atom	506	54	F	"bistriflimide F"	9	18.998    1
+atom	512	55	O	"bistriflimide O"	8	15.999    1
+
+
+      ################################
+      ##                            ##
+      ##  Van der Waals Parameters  ##
+      ##                            ##
+      ################################
+
+vdw          51  3.710     0.1100
+vdw          52  3.910     0.3850
+vdw          53  3.820     0.1010
+vdw          54  3.220     0.1200
+vdw          55  3.510     0.1120
+
+      ##################################
+      ##                              ##
+      ##  Bond Stretching Parameters  ##
+      ##                              ##
+      ##################################
+
+bond         51    52         433.08     1.6198
+bond         52    53         279.92     1.8517
+bond         52    55         601.09     1.4520
+bond         53    54         292.13     1.3403
+
+      ################################
+      ##                            ##
+      ##  Angle Bending Parameters  ##
+      ##                            ##
+      ################################
+
+angle        52   51   52      75.05     123.71
+angle        51   52   53      74.91     107.37
+angle        51   52   55      29.13     133.77
+angle        53   52   55     119.80     109.18
+angle        55   52   55     171.93     126.26
+angle        52   53   54      56.04      88.10
+angle        54   53   54     136.47     105.21
+
+
+      ###############################
+      ##                           ##
+      ##  Stretch-Bend Parameters  ##
+      ##                           ##
+      ###############################
+
+ strbnd        52    51    52     14.40      14.40
+ strbnd        51    52    53     -5.75      -5.75
+ strbnd        51    52    55     -5.75      -5.75
+ strbnd        53    52    55     -5.75      -5.75
+ strbnd        52    54    55     18.70      18.70
+
+
+      ############################
+      ##                        ##
+      ##  Torsional Parameters  ##
+      ##                        ##
+      ############################
+     
+
+torsion    52   51   52   53   0.000 0.0 1   -2.237 180.0 2   -0.094 0.0 3
+torsion    52   51   52   55   0.000 0.0 1    0.616 180.0 2    0.120 0.0 3
+torsion    51   52   53   54   0.000 0.0 1    0.000 180.0 2    0.209 0.0 3
+torsion    55   52   53   54   0.000 0.0 1    0.000 180.0 2    0.306 0.0 3
+
+
+      ###################################
+      ##                               ##
+      ##  Atomic Multipole Parameters  ##
+      ##                               ##
+      ###################################
+
+
+
+multipole	501	-502	-502	-0.97298
+                                        0.00000    0.00000   -0.19855
+                                        0.36652
+                                        0.00000   -0.20247
+                                        0.00000    0.00000   -0.16405
+multipole	502	-512	-512	1.86504
+                                        0.02134    0.00000    0.00733
+                                        1.00210
+                                        0.00000    0.45281
+                                       -0.08288    0.00000   -1.45491
+multipole	504	502	506	0.31451
+                                        0.05163    0.00000   -0.10721
+                                        0.11773
+                                        0.00000   -0.10019
+                                        0.11098    0.00000   -0.01754
+multipole	506	504	502	-0.22600
+                                       -0.07382    0.00000    0.08992
+                                       -0.26532
+                                        0.00000   -0.02452
+                                       -0.11925    0.00000    0.28984
+multipole	512	502	512	-0.75753
+                                        0.11184    0.00000   -0.19408
+                                       -0.10350
+                                        0.00000   -0.22538
+                                        0.11640    0.00000    0.32888
+
+      ########################################
+      ##                                    ##
+      ##  Dipole Polarizability Parameters  ##
+      ##                                    ##
+      ########################################
+
+
+polarize     501          1.0730     0.3900     502
+polarize     502          3.3000     0.3900     501   512
+polarize     504          1.3340     0.3900     506
+polarize     506          0.5070     0.3900     504
+polarize     512          0.8370     0.3900     502
+
