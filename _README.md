@@ -10,4 +10,5 @@ of ionic liquids, the results of which were published in Klajmon & Cervinka,
 Does Explicit Polarizability Improve Simulations of Phase Behavior of Ionic
 Liquids? J. Chem. Theory Comput. 2021, https://doi.org/10.1021/acs.jctc.1c00518.
 
-Hfus_JCTC_2021.png
+
+![Hfus_JCTC_2021](https://user-images.githubusercontent.com/52751621/133765209-6d3f987b-16c4-40ae-873c-d0a0c974787a.png)
